@@ -8,8 +8,9 @@ Another advantage of using this repository is that when some new themes are adde
 ## Available Themes
 
 - Space
-
-- Game [coming soon ..]
+- Sustain
+- Eco-Friend
+- Game [in future ..]
 
 ## Usage
 
