@@ -32,6 +32,9 @@ Another advantage of using this repository is that when some new themes are adde
 
     > *__**Pro:**__ `mdbook serve --open` can be used to build and track changes automatically. Saves one commnad to type :P .*
 
+
+mdBook.zip is attached to get the base files for building. Extract it to the root folder for building.
+
 ## Create/Modify Theme
 
 - To change the header, modify the `header.hbs` file
