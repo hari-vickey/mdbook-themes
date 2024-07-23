@@ -274,6 +274,94 @@
     --search-mark-bg: #e69f67;
 }
 
+.ecoFriend {
+    --bg: #c2e5cc;
+    --fg: #171717;
+    --menu-bg: var(--bg);
+    /* --menu-bg-img: url("http://example.com/assets/sustain/menu_bg.png");
+    --bg-img: url("https://example.com/assets/sustain/bg.png"); */
+
+    --sidebar-bg: #2B4F4F;
+    --sidebar-fg: #E0E0E0;
+    --sidebar-non-existant: #FFA500;
+    --sidebar-active: #00BFFF;
+    --sidebar-spacer: #008B8B;
+
+    --scrollbar: var(--sidebar-bg);
+
+    --icons: var(--sidebar-spacer);
+    --icons-hover: #884a31;
+
+    --links: #009bcb;
+
+    --code-bg: #2F4F4F;
+    --inline-code-color: #FFD700;
+
+    --theme-popup-bg: var(--bg);
+    --theme-popup-border: #00BFFF;
+    --theme-hover: var(--sidebar-bg);
+
+    --quote-bg: hsl(120, 60%, 77%);
+    --quote-border: hsl(120, 25%, 40%);
+
+    --table-border-color: #228B22;
+    --table-header-bg: var(--quote-bg);
+    --table-alternate-bg: transparent;
+
+    --searchbar-border-color: var(--icons);
+    --searchbar-bg: var(--sidebar-bg);
+    --searchbar-fg: var(--sidebar-fg);
+    --searchbar-shadow-color: #aaa;
+    --searchresults-header-fg: #B0E0E6;
+    --searchresults-border-color: var(--icons);
+    --searchresults-li-bg: #98FB98;
+    --search-mark-bg: #FFA07A;
+}
+
+.sustain {
+    --bg: #f5e9d5;
+    --fg: #171717;
+    --menu-bg: #f5e9d5;
+    --menu-bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/assets/sustain/menu_bg.png");
+
+    --sidebar-bg: #2B4F4F;
+    --sidebar-fg: #E0E0E0;
+    --sidebar-non-existant: #FFA500;
+    --sidebar-active: #DEA361;
+    --sidebar-spacer: #008B8B;
+
+    --scrollbar: #2B4F4F;
+
+    --icons: #008B8B;
+    --icons-hover: #fff;
+
+    --links: #00bfff;
+
+    --code-bg: #2F4F4F;
+    --inline-code-color: #DEA361;
+
+    --theme-popup-bg: #f5e9d5;
+    --theme-popup-border: #DEA361;
+    --theme-hover: #2B4F4F;
+
+    --quote-bg: #008B8B;
+    --quote-border: hsl(120, 25%, 40%);
+
+    --table-border-color: #228B22;
+    --table-header-bg: hsl(120, 40%, 55%);
+    --table-alternate-bg: transparent;
+
+    --searchbar-border-color: #DEA361;
+    --searchbar-bg: #2B4F4F;
+    --searchbar-fg: #E0E0E0;
+    --searchbar-shadow-color: #aaa;
+    --searchresults-header-fg: #00BFFF;
+    --searchresults-border-color: #DEA361;
+    --searchresults-li-bg: #98FB98;
+    --search-mark-bg: #FFA07A;
+}
+
+
 @media (prefers-color-scheme: dark) {
     .light.no-js {
         --bg: hsl(200, 7%, 8%);

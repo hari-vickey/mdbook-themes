@@ -129,6 +129,8 @@
                         <li role="none"><button role="menuitem" class="theme" id="navy">{{ theme_option "Navy" }}</button></li>
                         <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button></li>
                         <li role="none"><button role="menuitem" class="theme" id="space">{{ theme_option "Space" }}</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ecoFriend">{{ theme_option "EcoFriend" }}</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="sustain">{{ theme_option "Sustain" }}</button></li>
                     </ul>
                     {{#if search_enabled}}
                     <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
@@ -150,6 +152,9 @@
                         <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
                     </a>
                     {{/if}}
+                    <button class="icon-button" type="button" >
+                        <a href="https://discuss.e-yantra.org/" target="__blank">Forum</a>
+                    </button>
                     {{!-- {{ > ../path_to_root }} --}}
                 </div>
             </div>

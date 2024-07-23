@@ -184,6 +184,13 @@ blockquote {
     align-items: center;
 }
 
+.icon-button>a {
+    color: var(--icons);
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
 /*Add Background for Images*/
 .image-bg {
     background-color: #ffffff;

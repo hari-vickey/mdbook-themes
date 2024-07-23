@@ -72,9 +72,9 @@ a > .hljs {
 }
 
 .icon-button {
-    border: none;
-    background: none;
-    padding: 0;
+    border: solid 2px;
+    border-radius: 20px;
+    background: #fff;
     color: inherit;
 }
 .icon-button i {
