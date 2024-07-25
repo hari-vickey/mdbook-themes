@@ -234,8 +234,8 @@
     --bg: #000000;
     --fg: #ffffff;
     --menu-bg: var(--bg);
-    --menu-bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/images/space/menu_bg.png");
-    --bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/images/space/space_bg.png");
+    --menu-bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/assets/space/menu_bg.png");
+    --bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/assets/space/space_bg.png");
 
     --sidebar-bg: #1e1f1e;
     --sidebar-fg: #c8c9db;
