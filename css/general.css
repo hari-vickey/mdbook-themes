@@ -179,6 +179,12 @@ blockquote {
     font-weight: bold;
 }
 
+#image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .right-buttons {
     display: flex;
     align-items: center;

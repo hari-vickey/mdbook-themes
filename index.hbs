@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#ffffff" />
 
     {{#if favicon_png}}
-    <link rel="shortcut icon" href="{{ path_to_root }}icon.png">
+    <link rel="shortcut icon" href="https://e-yantra.org/logo/eyantra/press/25eyantra_logo~SmallLogo_html.svg">
     {{/if}}
     <link rel="stylesheet" href="{{ path_to_root }}css/variables.css">
     <link rel="stylesheet" href="{{ path_to_root }}css/general.css">
@@ -112,52 +112,71 @@
         <div class="page">
             <div id="menu-bar-hover-placeholder"></div>
             <div id="menu-bar" class="menu-bar autohide sticky bordered">
-                <div style="width:100%">
-                    {{> header }}
+                <div id="image-container">
+                    <img src="https://www.e-yantra.org/img/eYantra_logo.svg" alt="e-yantra_logo" style="padding:10px 15px;max-height:50px;" id="eLogo" />
+                    <img src="https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/assets/eyrc_ckt.png" alt="eyrc_ckt" style="max-height:80px;">
+                    <div id="RCName" style="font-weight:800;font-size:20px;text-align:center;padding:10px 15px">
+                        Robotics Competition<br>
+                        2024-25
+                    </div>
                 </div>
-                <div class="left-buttons">
-                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                        <i class="fa fa-paint-brush"></i>
-                    </button>
-                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                        <li role="none"><button role="menuitem" class="theme" id="light">{{ theme_option "Light" }}</button></li>
-                        <li role="none"><button role="menuitem" class="theme" id="rust">{{ theme_option "Rust" }}</button></li>
-                        <li role="none"><button role="menuitem" class="theme" id="coal">{{ theme_option "Coal" }}</button></li>
-                        <li role="none"><button role="menuitem" class="theme" id="navy">{{ theme_option "Navy" }}</button></li>
-                        <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button></li>
-                        <li role="none"><button role="menuitem" class="theme" id="space">{{ theme_option "Space" }}</button></li>
-                        <li role="none"><button role="menuitem" class="theme" id="ecoFriend">{{ theme_option "EcoFriend" }}</button></li>
-                        <li role="none"><button role="menuitem" class="theme" id="sustain">{{ theme_option "Sustain" }}</button></li>
-                    </ul>
-                    {{#if search_enabled}}
-                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                        <i class="fa fa-search"></i>
-                    </button>
-                    {{/if}}
-                </div>
+                <div style="display: flex; width:100%;">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">{{ theme_option "Light" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">{{ theme_option "Rust" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">{{ theme_option "Coal" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">{{ theme_option "Navy" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="space">{{ theme_option "Space" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ecoFriend">{{ theme_option "EcoFriend" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="sustain">{{ theme_option "Sustain" }}</button></li>
+                        </ul>
+                        {{#if search_enabled}}
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        {{/if}}
+                    </div>
 
-                <h1 class="menu-title">{{ book_title }}</h1>
+                    <h1 class="menu-title">{{ book_title }}</h1>
 
-                <div class="right-buttons">
-                    {{#if print_enable}}
-                    <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
-                        <i id="print-button" class="fa fa-print"></i>
-                    </a>
-                    {{/if}}
-                    {{#if git_repository_url}}
-                    <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
-                        <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
-                    </a>
-                    {{/if}}
-                    <button class="icon-button" type="button" >
-                        <a href="https://discuss.e-yantra.org/" target="__blank">Forum</a>
-                    </button>
-                    {{!-- {{ > ../path_to_root }} --}}
+                    <div class="right-buttons">
+                        {{#if print_enable}}
+                        <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        {{/if}}
+                        {{#if git_repository_url}}
+                        <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
+                        </a>
+                        {{/if}}
+                        <button class="icon-button" type="button" >
+                            <a href="https://discuss.e-yantra.org/" target="__blank">Forum</a>
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            <script type="text/javascript">
+                if (document.body.clientWidth < 600) {
+                    let logo = document.getElementById("eLogo");
+                    logo.style = "display: none";
+                    document.getElementById("RCName").style = "display: none";
+                    document.getElementById("image-container").style = "justify-content: center";
+                }
+                if (document.body.clientWidth < 400) {
+                    let rB = document.getElementsByClassName("right-buttons");
+                    rB[0].style = "display:none";
+                }
+            </script>
 
             {{#if search_enabled}}
             <div id="search-wrapper" class="hidden">
