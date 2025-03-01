@@ -8,9 +8,13 @@ Another advantage of using this repository is that when some new themes are adde
 ## Available Themes
 
 - Space
+    ![](./example/space.png)
 - Sustain
+    ![](./example/sustain.png)
 - Eco-Friend
-- Game [in future ..]
+    ![](./example/ecofriend.png)
+- Game [in future .. / challenge]
+
 
 ## Usage
 
